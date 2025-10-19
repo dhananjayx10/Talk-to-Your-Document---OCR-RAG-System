@@ -12,43 +12,38 @@ Enables conversational interaction with document content using RAG (Retrieval-Au
 Provides intelligent responses using LLM integration
 
 2. System Architecture
-┌─────────────────────────────────────────────────────────────┐
-│                    USER INTERFACE                           │
-│  (File Upload | Text Display | Chat Interface)              │
-└──────────────────────┬──────────────────────────────────────┘
-                       │
+─────────────────────────────────────────────────────────────
+                    USER INTERFACE                           
+  (File Upload | Text Display | Chat Interface)             
+────────────────────────────────────────────────────────────
                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│               TEXT EXTRACTION LAYER                         │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐                   │
-│  │   PDF    │  │  Image   │  │   Text   │                   │
-│  │ Extractor│  │   OCR    │  │  Reader  │                   │
-│  └──────────┘  └──────────┘  └──────────┘                   │
-└──────────────────────┬──────────────────────────────────────┘
-                       │
+─────────────────────────────────────────────────────────────
+              TEXT EXTRACTION LAYER                                
+  │   PDF    │  │  Image   │  │   Text   │                   
+  │ Extractor│  │   OCR    │  │  Reader  │                   
+              
+────────────────────────────────────────────────────────────
                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│              TEXT PROCESSING LAYER                          │
-│  • Text Cleaning                                            │
-│  • Chunking (with overlap)                                  │
-│  • Metadata Assignment                                      │
-└──────────────────────┬──────────────────────────────────────┘
-                       │
+─────────────────────────────────────────────────────────────
+             TEXT PROCESSING LAYER                          
+  • Text Cleaning                                            
+  • Chunking (with overlap)                                  
+  • Metadata Assignment                                      
+────────────────────────────────────────────────────────────
                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│              EMBEDDING & RETRIEVAL LAYER                    │
-│  • Generate Embeddings (Vector Representations)             │
-│  • Semantic Search (Cosine Similarity)                      │
-│  • Top-K Retrieval                                          │
-└──────────────────────┬──────────────────────────────────────┘
-                       │
+─────────────────────────────────────────────────────────────
+             EMBEDDING & RETRIEVAL LAYER                    
+  • Generate Embeddings (Vector Representations)             
+  • Semantic Search (Cosine Similarity)                      
+  • Top-K Retrieval                                          
+──────────────────────────────────────────────────────────
                        ▼
-┌─────────────────────────────────────────────────────────────┐
-│                  LLM INTEGRATION                            │
-│  • Context Assembly                                         │
-│  • Claude API (Anthropic)                                   │
-│  • Response Generation                                      │
-└─────────────────────────────────────────────────────────────┘
+────────────────────────────────────────────────────────────
+                 LLM INTEGRATION                            
+  • Context Assembly                                         
+  • Claude API (Anthropic)                                   
+  • Response Generation                                      
+─────────────────────────────────────────────────────────────
 3. Technologies & Libraries Used
 Frontend Framework:
 
