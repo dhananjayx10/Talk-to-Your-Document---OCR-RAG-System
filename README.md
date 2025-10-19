@@ -13,22 +13,22 @@ Provides intelligent responses using LLM integration
 
 2. System Architecture
 ┌─────────────────────────────────────────────────────────────┐
-│                    USER INTERFACE                            │
+│                    USER INTERFACE                           │
 │  (File Upload | Text Display | Chat Interface)              │
 └──────────────────────┬──────────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────────┐
-│               TEXT EXTRACTION LAYER                          │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐                 │
-│  │   PDF    │  │  Image   │  │   Text   │                 │
-│  │ Extractor│  │   OCR    │  │  Reader  │                 │
-│  └──────────┘  └──────────┘  └──────────┘                 │
+│               TEXT EXTRACTION LAYER                         │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐                   │
+│  │   PDF    │  │  Image   │  │   Text   │                   │
+│  │ Extractor│  │   OCR    │  │  Reader  │                   │
+│  └──────────┘  └──────────┘  └──────────┘                   │
 └──────────────────────┬──────────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              TEXT PROCESSING LAYER                           │
+│              TEXT PROCESSING LAYER                          │
 │  • Text Cleaning                                            │
 │  • Chunking (with overlap)                                  │
 │  • Metadata Assignment                                      │
@@ -36,7 +36,7 @@ Provides intelligent responses using LLM integration
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────────┐
-│              EMBEDDING & RETRIEVAL LAYER                     │
+│              EMBEDDING & RETRIEVAL LAYER                    │
 │  • Generate Embeddings (Vector Representations)             │
 │  • Semantic Search (Cosine Similarity)                      │
 │  • Top-K Retrieval                                          │
@@ -44,7 +44,7 @@ Provides intelligent responses using LLM integration
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                  LLM INTEGRATION                             │
+│                  LLM INTEGRATION                            │
 │  • Context Assembly                                         │
 │  • Claude API (Anthropic)                                   │
 │  • Response Generation                                      │
