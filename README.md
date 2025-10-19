@@ -13,11 +13,13 @@ Provides intelligent responses using LLM integration
 
 2. System Architecture
 ─────────────────────────────────────────────────────────────
+
                     USER INTERFACE                           
   (File Upload | Text Display | Chat Interface)             
 ────────────────────────────────────────────────────────────
                        ▼
 ─────────────────────────────────────────────────────────────
+
               TEXT EXTRACTION LAYER                                
   │   PDF    │  │  Image   │  │   Text   │                   
   │ Extractor│  │   OCR    │  │  Reader  │                   
@@ -25,6 +27,7 @@ Provides intelligent responses using LLM integration
 ────────────────────────────────────────────────────────────
                        ▼
 ─────────────────────────────────────────────────────────────
+
              TEXT PROCESSING LAYER                          
   • Text Cleaning                                            
   • Chunking (with overlap)                                  
@@ -39,11 +42,13 @@ Provides intelligent responses using LLM integration
 ──────────────────────────────────────────────────────────
                        ▼
 ────────────────────────────────────────────────────────────
+
                  LLM INTEGRATION                            
   • Context Assembly                                         
   • Claude API (Anthropic)                                   
   • Response Generation                                      
 ─────────────────────────────────────────────────────────────
+
 3. Technologies & Libraries Used
 Frontend Framework:
 
